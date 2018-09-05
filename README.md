@@ -1,4 +1,4 @@
-# Bootstrap 4 HTML Generator
+# CUrso JS com TDD na prática
 
 One Paragraph of project description goes here
 
@@ -12,10 +12,8 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Matheus Barone** - *Initial work* - [Matheus Barone](https://github.com/mathvbarone)
+- **Matheus Barone** - _Initial work_ - [Matheus Barone](https://github.com/mathvbarone)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-
