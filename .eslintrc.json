@@ -10,7 +10,12 @@
       "never"
     ],
     "linebreak-style": 0,
-    "allowShortCircuit": true,
-    "allowTernary": true
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowTernary": true,
+        "allowShortCircuit": true
+      }
+    ]
   }
 }
