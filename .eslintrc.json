@@ -2,7 +2,15 @@
   "extends": "airbnb-base",
   "env": {
     "browser": true,
-    "mocha": true,
-    "comma-dangle": ["error", "never"]
+    "mocha": true
+  },
+  "rules": {
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "linebreak-style": 0,
+    "allowShortCircuit": true,
+    "allowTernary": true
   }
 }
