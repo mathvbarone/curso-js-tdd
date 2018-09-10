@@ -18,4 +18,8 @@ describe('Fizzbuzz', () => {
   it('should return the number when not multiple', () => {
     expect(fizzbuzz(7)).to.be.equal(7);
   });
+
+  it('should return 0 when 0', () => {
+    expect(fizzbuzz(0)).to.be.equal(0);
+  });
 });
