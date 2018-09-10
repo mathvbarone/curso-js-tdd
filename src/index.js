@@ -1,8 +1,7 @@
 // import style from './main.css';
-const sum = (a, b) => a + b;
-const sub = (a, b) => a - b;
-const multi = (a, b) => a * b;
-const div = (a, b) => a * b;
-
+const sum = (num1, num2) => num1 + num2;
+const sub = (num1, num2) => num1 - num2;
+const multi = (num1, num2) => num1 * num2;
+const div = (num1, num2) => { return num2 === 0 ? 'Division by 0 is not possible' : num1 / num2; };
 
 export { sum, sub, multi, div };

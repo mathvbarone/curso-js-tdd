@@ -10,12 +10,23 @@
       "never"
     ],
     "linebreak-style": 0,
-    "no-unused-expressions": [
+    "no-unused-expressions": 0,
+    "chai-friendly/no-unused-expressions": 2,
+    "object-curly-newline": [
       "error",
       {
-        "allowTernary": true,
-        "allowShortCircuit": true
+        "ObjectExpression": "always",
+        "ObjectPattern": {
+          "multiline": true
+        }
       }
+    ],
+    "arrow-body-style": [
+      2,
+      "alwas-needed"
     ]
-  }
+  },
+  "plugins": [
+    "chai-friendly"
+  ]
 }
