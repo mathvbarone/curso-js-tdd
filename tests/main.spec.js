@@ -1,50 +1,21 @@
 import { expect } from 'chai';
-import { sum, sub, multi, div } from '../src/index';
+import fizzbuzz from '../src/index';
 
 
-describe('Calc', () => {
-  describe('Smoke Tests', () => {
-    it('should exist the method ´sum´', () => {
-      expect(sum).to.exist;
-    });
-    it('should exist the method ´sub´', () => {
-      expect(sub).to.exist;
-    });
-    it('should exist the method ´multi´', () => {
-      expect(multi).to.exist;
-    });
-    it('should exist the method ´div´', () => {
-      expect(div).to.exist;
-    });
+describe('Fizzbuzz', () => {
+  it('should return ´fizz´ when multiple of 3', () => {
+    expect(fizzbuzz(3)).to.be.equal('fizz');
+    expect(fizzbuzz(6)).to.be.equal('fizz');
   });
-});
+  it('should return `buzz` when multiple of 5', () => {
+    expect(fizzbuzz(5)).to.be.equal('buzz');
+    expect(fizzbuzz(10)).to.be.equal('buzz');
+  });
+  it('should return `fizzbuzz` when multiple of 3 and 5', () => {
+    expect(fizzbuzz(15)).to.be.equal('fizzbuzz');
+  });
 
-describe('Sum', () => {
-  it('should return 4 when `sum(2,2)`', () => {
-    expect(sum(2, 2)).to.be.equal(4);
-  });
-});
-
-describe('Sub', () => {
-  it('should return 4 when `sub(6,2)`', () => {
-    expect(sub(6, 2)).to.be.equal(4);
-  });
-  it('should return -4 when `sum(6,10)`', () => {
-    expect(sub(6, 10)).to.be.equal(-4);
-  });
-});
-
-describe('Multi', () => {
-  it('should return 4 when `multi(2,2)`', () => {
-    expect(multi(2, 2)).to.be.equal(4);
-  });
-});
-
-describe('Div', () => {
-  it('should return 2 when `div(4,2)`', () => {
-    expect(div(4, 2)).to.be.equal(2);
-  });
-  it('should return `Division by 0 is not possible`', () => {
-    expect(div(4, 0)).to.be.equal('Division by 0 is not possible');
+  it('should return the number when not multiple', () => {
+    expect(fizzbuzz(7)).to.be.equal(7);
   });
 });

@@ -30,6 +30,12 @@
       {
         "allowParens": true
       }
+    ],
+    "consistent-return": [
+      "error",
+      {
+        "treatUndefinedAsUnspecified": true
+      }
     ]
   },
   "plugins": [
