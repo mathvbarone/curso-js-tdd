@@ -22,8 +22,14 @@
       }
     ],
     "arrow-body-style": [
-      2,
-      "alwas-needed"
+      "error",
+      "as-needed"
+    ],
+    "no-confusing-arrow": [
+      "error",
+      {
+        "allowParens": true
+      }
     ]
   },
   "plugins": [
